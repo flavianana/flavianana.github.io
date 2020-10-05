@@ -1,0 +1,13 @@
+title: Platforme Digitale
+tagline: Curs online
+url: https://platforme-digitale.com
+baseurl: ""
+permalink: pretty
+
+exclude:
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - dev.bat
+  - install-dev.bat

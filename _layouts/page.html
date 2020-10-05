@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article class="page">
+  {{ content }}
+</article>
+
+<div class="pagination">
+  {% if page.prev %}
+    <a href="{{ page.prev.url }}" class="pagination-item older">{{ page.prev.title }}</a>
+  {% endif %}
+
+  {% if page.next %}
+    <a href="{{ page.next.url }}" class="pagination-item newer">{{ page.next.title }}</a>
+  {% endif %}
+</div>
