@@ -1,3 +1,12 @@
 * {
     font-family: 'Roboto', serif;
 }
+
+figure {
+    margin: 0;
+}
+
+figure figcaption {
+    font-size: 14px;
+    text-align: center;
+}
