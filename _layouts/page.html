@@ -9,9 +9,13 @@ layout: default
 <div class="pagination">
   {% if page.prev %}
     <a href="{{ page.prev.url }}" class="pagination-item older">{{ page.prev.title }}</a>
+  {% else %}
+    <span class="pagination-item older placeholder"></span>
   {% endif %}
 
   {% if page.next %}
     <a href="{{ page.next.url }}" class="pagination-item newer">{{ page.next.title }}</a>
+  {% else %}
+    <span class="pagination-item newer placeholder"></span>
   {% endif %}
 </div>
