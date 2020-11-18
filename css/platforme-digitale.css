@@ -2,6 +2,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.row {
+    display: flex;
+  }
+
+.column {
+    flex: 50%;
+    padding: 5px;
+  }
+
 figure {
     margin: 0;
 }
