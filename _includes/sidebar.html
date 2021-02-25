@@ -52,5 +52,20 @@ styles, `#sidebar-checkbox` for behavior. -->
             {% endif %}
         {% endfor %}
     </nav>
+
+    <div class="sidebar-item">
+        <p>IHoF 2020</p>
+    </div>
+
+    <nav class="sidebar-nav">
+        {% assign pages_list = site.pages | sort:"url" %}
+        {% for node in pages_list %}
+            {% if node.title != null %}
+                {% if node.layout == "ihof" %}
+                <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </nav>
     
 </div>
