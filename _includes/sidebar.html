@@ -31,14 +31,14 @@ styles, `#sidebar-checkbox` for behavior. -->
         {% assign pages_list = site.pages | sort:"url" %}
         {% for node in pages_list %}
             {% if node.title != null %}
-                {% if node.layout == "course" %}
+                {% if node.layout == "course" and node.show_in_sidebar %}
                 <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
                 {% endif %}
             {% endif %}
         {% endfor %}
     </nav>
 
-    <div class="sidebar-item">
+    <!-- <div class="sidebar-item">
         <p>Seminarii</p>
     </div>
 
@@ -51,7 +51,7 @@ styles, `#sidebar-checkbox` for behavior. -->
                 {% endif %}
             {% endif %}
         {% endfor %}
-    </nav>
+    </nav> -->
 
     <div class="sidebar-item">
         <p>IHoF 2020</p>
