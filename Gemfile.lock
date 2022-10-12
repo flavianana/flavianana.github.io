@@ -74,7 +74,7 @@ PLATFORMS
 
 DEPENDENCIES
   eventmachine (= 1.2.7)!
-  jekyll
+  jekyll (= 4.2.1)
   wdm (>= 0.1.0)
   webrick (~> 1.7)
 
