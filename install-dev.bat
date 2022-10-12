@@ -1,1 +1,1 @@
-gem install jekyll bundler && bundle install && gem uninstall eventmachine --force && gem install eventmachine --platform ruby
+gem install bundler && bundle install && gem uninstall eventmachine --force && gem install eventmachine --platform ruby
